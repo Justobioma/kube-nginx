@@ -95,5 +95,12 @@ This project is a hands-on exploration of key Kubernetes concepts using Minikube
 
 ### 🌐 This exposes the Nginx pods to your local machine using a NodePort. You can view the service in your browser using:
 - minikube service nginx-service
+  
+### Photos
+
+<img width="339" height="212" alt="kube service" src="https://github.com/user-attachments/assets/883b98b2-f8de-448a-90a4-113bae7e87eb" />
+<img width="387" height="222" alt="kube service webpage" src="https://github.com/user-attachments/assets/51f82ff3-ac41-41e0-ad17-21957447d709" />
+
 ### 💬 Reflections
+
 “This project helped me understand how Kubernetes abstracts infrastructure complexity. The declarative nature of YAML and the power of kubectl commands made it easier to manage containerized applications.” — Obioma
