@@ -19,6 +19,17 @@ spec:
         image: nginx:latest
         ports:
         - containerPort: 80
+        env:
+        - name: WELCOME_MESSAGE
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: WELCOME_MESSAGE
+        - name: API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: app-secret
+              key: API_KEY
         resources:
           requests:
             memory: "64Mi"
