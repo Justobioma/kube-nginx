@@ -97,7 +97,27 @@ This project is a hands-on exploration of key Kubernetes concepts using Minikube
 
 ### 🌐 This exposes the Nginx pods to your local machine using a NodePort. You can view the service in your browser using:
 - minikube service nginx-service
-  
+
+### 🌐 Breakdown of app-config.yaml  
+```
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  WELCOME_MESSAGE: "Hello, Obioma!"
+
+```
+### 🌐 Breakdown of app-secret.yaml  
+```
+apiVersion: v1
+kind: Secret
+metadata:
+  name: app-secret
+type: Opaque
+data:
+  API_KEY: bXktc2VjcmV0LWFwaS1rZXk=
+```
 ### Photos
 
 <img width="339" height="212" alt="kube service" src="https://github.com/user-attachments/assets/883b98b2-f8de-448a-90a4-113bae7e87eb" />
