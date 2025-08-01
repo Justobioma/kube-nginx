@@ -8,11 +8,13 @@ This project is a hands-on exploration of key Kubernetes concepts using Minikube
 - Use ConfigMaps for non-sensitive data
 - Store and inject sensitive data using Secrets
 - Write Kubernetes configurations in YAML
-- Document your DevOps journey professionally using GitHub
+- Document my DevOps journey professionally using GitHub
 
 ### 📁 Project Structure
 ├── nginx-deployment.yaml     # Deployment file for Nginx web server
 ├── nginx-service.yaml        # Service to expose the Nginx deployment
+├── app-config.yaml           # ConfigMap file for non-sensitive information
+├── app-secret.yaml           # Secret file for sensitive information
 ├── README.md                 # Project documentation
 
 ### ⚙️ Setup Instructions
